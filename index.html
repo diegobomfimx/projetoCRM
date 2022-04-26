@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/responsive.css">
-    <title>Zaphyra CRM</title>
+    <title>Zaphyra Co. CRM Dashboard</title>
     <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
 </head>
 <body>
     <div class="container">
@@ -122,7 +123,7 @@
                 <div class="pedidoRecentes">
                     <div class="cardHeader">
                         <h2>Pedidos Recentes</h2>
-                        <a href="#" class="button">Ver Todos</a>
+                        <a href="pedidos.html" target="_blank" class="button">Ver Todos</a>
                     </div>
                      <table>
                          <thead>
@@ -237,16 +238,7 @@
 
     </div>
 
-    <script>
-        function ativarMenu() {
-            let toggle = document.querySelector('.toggle');
-            let navbar = document.querySelector('.navbar');
-            let principal = document.querySelector('.principal');
-            toggle.classList.toggle('active');
-            navbar.classList.toggle('active');
-            principal.classList.toggle('active');
-        }
-    </script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

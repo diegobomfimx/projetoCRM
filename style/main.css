@@ -284,6 +284,7 @@ body {
 .detalhes .pedidoRecentes table tbody tr:hover {
     background: #3939c5;
     color: #fff;
+    transition: .3s;
 }
 
 .detalhes .pedidoRecentes table tr td { 
