@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>Zaphyra Co. CRM Dashboard</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fas fa-dog"></i></span>
+                    <span class="title"><h2>Zaphyra Co.</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-columns"></i></span>
+                        <span class="title">Painel de Controle</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="title">Clientes</span>                   
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-comment-alt"></i></span>
+                        <span class="title">Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-lock"></i></span>
+                        <span class="title">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="principal">
+            <div class="topbar">
+                <div class="toggle" onclick="ativarMenu()"></div>
+                <div class="pesquisa">
+                    <label>
+                        <input type="text" placeholder="Pesquise Aqui">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="img/user.jpg" alt="" width="100px">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1.043</div>
+                        <div class="cardName">Visualizações Diárias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Vendas</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">145</div>
+                        <div class="cardName">Comentários</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">R$ 15.000,00</div>
+                        <div class="cardName">Ganhos</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detalhes">
+                <div class="pedidoRecentes">
+                    <div class="cardHeader">
+                        <h2>Pedidos Recentes</h2>
+                        <a href="pedidos.html" target="_blank" class="button">Ver Todos</a>
+                    </div>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <td>Nome</td>
+                                 <td>Preço</td>
+                                 <td>Pagamento</td>
+                                 <td>Status</td>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>Casinha Canina</td>
+                                 <td>R$ 70,00</td>
+                                 <td>Pago</td>
+                                 <td><span class="status entregue">Entregue</span></td>
+                             </tr>
+                             <tr>
+                                <td>Brinquedo Mordedor</td>
+                                <td>R$ 35,00</td>
+                                <td>Pago</td>
+                                <td><span class="status entregue">Entregue</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ração 10KG</td>
+                                <td>R$ 150,00</td>
+                                <td>Pendente</td>
+                                <td><span class="status pendente">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tigela Ração</td>
+                                <td>R$ 21,00</td>
+                                <td>Pago</td>
+                                <td><span class="status enviar">A Enviar</span></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Casinha Canina</td>
+                                <td>R$ 70,00</td>
+                                <td>Pago</td>
+                                <td><span class="status entregue">Entregue</span></td>
+                            </tr>
+                            <tr>
+                               <td>Brinquedo Mordedor</td>
+                               <td>R$ 35,00</td>
+                               <td>Pago</td>
+                               <td><span class="status entregue">Entregue</span></td>
+                           </tr>
+                           <tr>
+                               <td>Ração 10KG</td>
+                               <td>R$ 150,00</td>
+                               <td>Pendente</td>
+                               <td><span class="status pendente">Pendente</span></td>
+                           </tr>
+                           <tr>
+                               <td>Tigela Ração</td>
+                               <td>R$ 21,00</td>
+                               <td>Pago</td>
+                               <td><span class="status enviar">A Enviar</span></td>
+                           </tr>
+                         </tbody>
+                     </table>
+
+                </div>
+                <div class="clienteRecentes">
+                    <div class="cardHeader">
+                        <h2>Clientes Recentes</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img1.jpeg" alt=""></div></td>
+                                <td><h4>Jhon<br><span>Aracaju, SE</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img2.jpg" alt=""></div></td>
+                                <td><h4>Carlos<br><span>Salvador, BA</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img3.jpg" alt=""></div></td>
+                                <td><h4>Marla<br><span>Lauro de Freitas, BA</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img4.jpg" alt=""></div></td>
+                                <td><h4>Juan<br><span>Salvador, BA</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img5.jpg" alt=""></div></td>
+                                <td><h4>Brenda<br><span>Maceió, AL</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img6.jpg" alt=""></div></td>
+                                <td><h4>Deedee<br><span>Socorro, SE</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img7.jpg" alt=""></div></td>
+                                <td><h4>Amanda<br><span>Maceió, AL</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img/img8.jpg" alt=""></div></td>
+                                <td><h4>Cinthia<br><span>Salvador, BA</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
